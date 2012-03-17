@@ -1,0 +1,58 @@
+<!DOCTYPE tiles-definitions PUBLIC    "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"    "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/jsp/baseLayout.jsp">
+         <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+         <put-attribute name="right" value="/WEB-INF/jsp/ad.jsp" />
+         <put-attribute name="headNavigation" value="/WEB-INF/jsp/header.jsp" />
+	</definition>
+	<definition name="logged" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/jsp/postLoginMenu.jsp"/>
+		<put-attribute name="right" value="/WEB-INF/jsp/ad.jsp"/>
+		<put-attribute name="headNavigation" value="/WEB-INF/jsp/header.jsp"/>
+	</definition>
+	<definition name="postLoginHome" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/postLoginHome.jsp"/>
+	</definition>
+	<definition name="voteridReg" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/postLoginRegisterVoterId.jsp"/>
+	</definition>
+	<definition name="postLoginNews" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/news.jsp"/>
+	</definition>
+	<definition name="postLoginHelp" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/help.jsp"/>
+	</definition>
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	<definition name="confirmRegUser" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/confirmReg.jsp" />
+	</definition>
+	<definition name="register" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/registerUser.jsp" />
+	</definition>
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	<definition name="news" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/news.jsp" />
+	</definition>
+	<definition name="help" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/jsp/help.jsp" />
+	</definition>
+	<definition name="confirmReg" extends="logged">
+		<put-attribute name="content" value="Done !!!" />
+	</definition>
+	<definition name="viewvoterid" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/viewvoterid.jsp" />
+	</definition>
+	<definition name="viewVerifyVoterId" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/viewVoterIdWardUser.jsp" />
+	</definition>
+	<definition name="warduservoteridrequest" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/warduservoteridrequest.jsp" />
+	</definition>
+	<definition name="error" extends="logged">
+		<put-attribute name="content" value="/WEB-INF/jsp/postLoginError.jsp" />
+	</definition>
+</tiles-definitions>

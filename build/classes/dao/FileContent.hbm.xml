@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="FileContent">
+  	<id name="fileId" type="string" column="fileId">
+  		<generator class="assigned" />
+  	</id>
+  	<property name="blob" type="blob" column="file"  />
+  </class>
+</hibernate-mapping>

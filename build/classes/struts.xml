@@ -1,0 +1,72 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd" >
+
+<struts>
+<constant name="struts.multipart.maxSize" value="120970000" />
+	<package name="defalut" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		<action name="home" class="processAction">
+			<result name="nLoggedIn" type="tiles">home</result>
+			<result name="loggedIn" type="tiles">postLoginHome</result>
+		</action>
+		<action name="register" class="processAction">
+			<result name="nLoggedIn" type="tiles">register</result>
+			<result name="loggedIn" type="tiles">postLoginHome</result>
+		</action>
+		<action name="news" class="processAction">
+			<result name="nLoggedIn" type="tiles">news</result>
+			<result name="loggedIn" type="tiles">postLoginNews</result>
+		</action>
+		<action name="help" class="processAction">
+			<result name="nLoggedIn" type="tiles">help</result>
+			<result name="loggedIn" type="tiles">postLoginHelp</result>
+		</action>
+		<action name="voteridReg" class="voteridReqRegAction">
+			<result name="loggedIn" type="tiles">voteridReg</result>
+			<result name="exist" type="tiles">viewvoterid</result>
+			<result name="nLoggedIn" type="tiles">login</result>
+		</action>
+		<action name="login" class="processAction">
+			<result name="nLoggedIn" type="tiles">login</result>
+			<result name="loggedIn" type="tiles">postLoginHome</result>
+		</action>
+		<action name="logmein" class="loginAction">
+			<result name="Home" type="tiles">postLoginHome</result>
+			<result name="error" type="tiles">login</result>
+		</action>
+		<action name="logout" class="logoutAction">
+			<result name="login" type="tiles">login</result>
+		</action>
+		<action name="regUser" class="registerAction">
+			<result name="done" type="tiles">confirmRegUser</result>
+			<result name="inputError" type="tiles">register</result>
+		</action>
+		<action name="" class="processAction">
+			<result name="nLoggedIn" type="tiles">postLoginHome</result>
+			<result name="loggedIn" type="tiles">home</result>
+		</action>
+		<action name="verifyVoterIdWardUser" class="viewVerifyVoterId">
+			<result name="view" type="tiles">viewVerifyVoterId</result>
+			<result name="noAuthority" type="tiles">error</result>
+			<result name="nLoggedIn" type="tiles">login</result>
+		</action>
+		<action name="requestForVoterIdWardUser" class="requestForVoterIdWardUserAction">
+			<result name="view" type="tiles">warduservoteridrequest</result>
+			<result name="noAuthority" type="tiles">error</result>
+			<result name="nLoggedIn" type="tiles">login</result>
+		</action>
+		<action name="regVoterId" class="voterIdAction">
+			<interceptor-ref name="fileUpload">
+			     <param name="maximumSize">20000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="done" type="tiles">confirmReg</result>
+			<result name="exist" type="tiles">viewvoterid</result>
+			<result name="error" type="tiles">voteridReg</result>
+			<result name="login" type="tiles">login</result>
+		</action>
+	</package>
+</struts>

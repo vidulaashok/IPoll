@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="FileInfo">
+	<id name="fileId" type="string" column="fileId" >
+		<generator class="uuid" />
+	</id>
+	<property name="fileName" not-null="true" column="fileName" type="string" />
+	<property name="disc" column="disc" not-null="true" type="string" />	
+	<property name="uploadedBy" column="uploadedBy"  type="string" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,358 @@
+#logo
+{
+position:relative;
+float:left;
+background-color:#000000;
+color:#FFFFFF;
+}
+
+#idError p
+{
+	color:#CC3333;
+}
+#passError p
+{
+	color:#CC3333;
+}
+#error p
+{
+	color:#CC3333;
+}
+.error
+{
+	color:#CC3333;
+}
+
+#headNavigation
+{
+position:relative;
+float:left;
+background-color:#000000;
+color:#FFFFFF;
+height:80px;
+padding-left:5px;
+width:720px;
+vertical-align:bottom;
+}
+
+.navLink
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.navLink:Hover
+{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+#menu
+{
+
+}
+#menu a
+{
+color:#003366;
+font:Terminal;
+text-decoration:none;
+font-size:16px;
+padding-left:10px;
+
+}
+#menu a:Hover
+{
+color:#003366;
+font:Terminal;
+font-size:16px;
+text-decoration:underline;
+padding-left:10px;
+}
+.spacer
+{
+	height:30px;
+}
+.spacerSmall
+{
+	height:10px;
+}
+#searchBox
+{
+	width:100px;
+	height:70px;
+}
+.heading
+{
+	background-color:#EEEEEE;
+	margin-top:2px;
+	border-bottom:solid #777777 1px;
+	color:#000000;
+	font:Terminal;
+	font-size:16px;
+	
+	width:100%;
+}
+.textBox {
+	
+	border:1px solid #000000;
+	font:Terminal;
+	color:#555555;
+	width:100px;
+}
+.button
+{
+	margin:10px;
+	text-align:center;
+	border:solid #000000 1px;
+	background-color:#CCCCCC;
+}
+.button:Hover
+{
+	text-align:center;
+	border:solid #000000 1px;
+	background-color:#CCCCCC;
+	text-decoration:underline;
+}
+.main
+{
+	padding:5px;
+	margin:2px;
+	
+	
+}
+.main a
+{
+	color:#003366;
+	font:Terminal;
+	text-decoration:none;
+	font-size:16px;
+}
+.main a:Hover
+{
+	color:#003366;
+	font:Terminal;
+	text-decoration:underline;
+	font-size:16px;
+}
+.main label
+{
+	font-size:14px;
+	font:georgia;
+	color:#555555;
+}
+.main span
+{
+	font-size:14px;
+	font:georgia;
+	color:#555555;
+}
+.main p
+{
+	font:georgia;
+	font-size:14px;
+	color:#555555;
+	width:360px;
+	overflow:hidden;
+}
+.main h1
+{
+	color:#000000;
+	font-size:24px;
+	font:georgia;
+}
+.main h2
+{
+	color:#222222;
+	font-size:20px;
+	font:georgia;
+}
+#info
+{
+	width:488px;
+	height: 20px;
+	padding-left:10px;
+	border-bottom:dashed #999999 1px;
+	top:0px;
+	position:relative;
+}
+#left_uni
+{
+width:200px;
+padding:0px;
+float:left;
+
+}
+#right_uni {
+width:280px;
+text-align:right;
+padding-left:5px;
+float:left;
+
+}
+.lastlogin_label
+{
+	font-size:14px;
+}
+.username_label
+{
+	font-size:14px;
+}
+.username_value
+{
+	font-size:14px;
+	font-style: italic;
+}
+.lastlogin_value
+{
+	font-size:14px;
+}
+.votercard_header
+{
+	background:#555555;
+	color:#FFFFFF;
+	font-size:18px;
+	height:100px;
+	padding-left:2px;
+}
+.votercard_name_label
+{
+	color:#AAAAAA;
+	vertical-align:middle;
+	padding-left:10px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.votercard_name_value
+{
+	color:#FFFFFF;
+	font-style:italic;
+}
+.votercard_image
+{
+	float:right;
+	max-height:100px;
+	min-height:50px;
+	min-width:50px;
+	max-width:100px;
+}
+.votercard_content
+{
+	padding:30px;
+	color:#000000;
+}
+.votercard_label
+{
+	color:#333333;
+	font-size:12px;
+}
+.votercard_value
+{
+	color:#000000;
+	font-size:12px;
+	float:right;
+	font-style:italic;
+}
+.votercard_heading
+{
+	font-size:16px;
+	color:#222222;
+}
+.votercard_personal
+{
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+}
+.votercard_property
+{
+	padding-top:5px;
+	padding-bottom:3px;
+}
+.votercard_property_heading
+{
+	font-size:14px;
+	color:#333333;
+	padding-top:5px;
+	padding-bottom:3px;
+}
+.votecard_sub_property
+{
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:3px;
+}
+.requestHolder
+{
+	padding-top:5px;
+	padding-left:7px;
+	padding-right:7px;
+	font-size:12px;
+	padding-bottom:10px;
+	width:475px;
+}
+.request
+{
+	padding-left:7px;
+	padding-bottom:5px;
+	width:400px;
+	min-height:80px;
+}
+.req_content
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding-left:15px;
+}
+.req_label
+{
+	color:#000000;
+	font-weight:bold;
+}
+.req_value
+{
+	color:#333333;
+	font-style:italic;
+}
+#left_uni_req
+{
+width:180px;
+padding:0px;
+float:left;
+
+}
+#right_uni_req {
+width:200px;
+text-align:right;
+padding-left:5px;
+float:left;
+
+}
+.req_heading
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#000000;
+	padding:10px;
+	text-decoration:underline;
+}
+.error
+{
+	padding:5px;
+	color:#FF0000;
+	font-size:14px;
+}
+.accept
+{
+	font:14px;
+	color:#7DBA7B;
+}
+.reject
+{
+	font:14px;
+	color:#DB8C86;
+}
+.verifyblock
+{
+	height: 200px;
+	width: 360px;
+	padding: 10px;
+}

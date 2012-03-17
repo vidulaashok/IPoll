@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="Party">
+  	<id name="Partyname" type="string" column="Partyname">
+  		<generator class="uuid" />
+  	</id>
+  	<property name="head" column="head" not-null="true" type="string" />
+  	<property name="symbol" column="symbol" not-null="true" type="string" />
+
+  </class>
+</hibernate-mapping>

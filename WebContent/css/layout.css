@@ -1,0 +1,45 @@
+html { 
+padding:0px;
+margin:0px;
+}
+
+body {
+text-align:center;
+margin:0px;
+padding:0px;
+}
+
+#box {
+width:900px;
+margin: 0px auto;
+padding:0px;
+text-align:left;
+}
+
+#content {
+width:500px;
+
+margin-bottom:10px;
+float:left;
+background-color:#fff;
+overflow: auto;
+border-left: solid #000000 1px;
+border-right: solid #000000 1px;
+border-bottom: solid #000000 1px;
+}
+
+#head {
+width:900px;
+}
+
+#right {
+width:175px;
+padding-left:10px;
+float:left;
+}
+
+#left {
+width:175px;
+padding:0px;
+float:left;
+}

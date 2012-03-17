@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id="loginServ" class="service.UserServ" scope="prototype">
+		<property name="dao" >
+			<ref bean="userDAO" />
+		</property>
+	</bean>
+	<bean id="RegVoterIdServ" class="service.VoterIdServ" scope="prototype">
+		<property name="dao" >
+			<ref bean="voterDAO" />
+		</property>
+		<property name="rdao" >
+			<ref bean="requestForVoterIdDAO" />
+		</property>
+	</bean>
+	<bean id="requestServ" class="service.RequestServ" scope="prototype">
+		<property name="dao" >
+			<ref bean="requestDAO" />
+		</property>
+		<property name="rfvdao" >
+			<ref bean="requestForVoterIdDAO" />
+		</property>
+	</bean>
+	
+</beans>

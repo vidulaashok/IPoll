@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="Likes">
+  	<id name="likesid" type="string" column="likesid">
+  		<generator class="uuid" />
+  	</id>
+  	<property name="blog_id" column="blog_id" not-null="true" type="string" />
+  	<property name="likes" column="likes" not-null="true" type="long" />
+  	<property name="user_name" column="user_name" not-null="true" type="string" />
+  </class>
+</hibernate-mapping>

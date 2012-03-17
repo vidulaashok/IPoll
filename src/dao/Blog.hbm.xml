@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="Blog">
+  	<id name="blog_id" type="string" column="blog_id">
+  		<generator class="uuid" />
+  	</id>
+  	<property name="title" column="title" not-null="true" type="string" />
+  	<property name="post" column="post" not-null="true" type="string" />
+  	<property name="date" column="date" not-null="true" type="timestamp" />
+  </class>
+</hibernate-mapping>

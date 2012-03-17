@@ -1,0 +1,41 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id="processAction" class="action.Process" scope="prototype">
+	</bean>
+	<bean id="loginAction" class="action.LoginAction" scope="prototype">
+		<property name="serv" >
+			<ref bean="loginServ"/>
+		</property>
+	</bean>
+	
+	<bean id="viewVerifyVoterId" class="action.veiwVerifyVoterIdAction" scope="prototype">
+		<property name="serv" >
+			<ref bean="RegVoterIdServ"/>
+		</property>
+	</bean>
+	
+	<bean id="requestForVoterIdWardUserAction" class="action.RequestForVoterIdWardUserAction" scope="prototype">
+		<property name="serv" >
+			<ref bean="requestServ"/>
+		</property>
+	</bean>
+	<bean id="voteridReqRegAction" class="action.VoterRegReqAction" scope="prototype">
+		<property name="serv" >
+			<ref bean="RegVoterIdServ"/>
+		</property>
+	</bean>
+	<bean id="logoutAction" class="action.LogoutAction" scope="prototype">
+	</bean>
+	<bean id="voterIdAction" class="action.VoterIdRegAction" scope="prototype">
+		<property name="serv" >
+			<ref bean="RegVoterIdServ"/>
+		</property>
+	</bean>
+	<bean id="registerAction" class="action.RegisterAction" scope="prototype">
+		<property name="serv" >
+			<ref bean="loginServ"/>
+		</property>
+	</bean>
+</beans>

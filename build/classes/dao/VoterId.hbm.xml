@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="VoterId">
+  <id name="voterID" column="voterId"  type="string" >
+  	<generator class="uuid" />
+  </id>
+  <property name="id" column="id" type="string" />
+  <property name="name" column="name" type="string" not-null="true" />
+  <property name="surName" column="surName" type="string" not-null="true" />
+  <property name="dateOfBirth" column="dob" type="timestamp" not-null="true" />
+  <property name="fathersName" column="fathersName" type="string" not-null="true" />
+  <property name="currentAddress" column="currAdd" type="string" not-null="true" />
+  <property name="placeOfBirth" column="pobAdd" type="string" not-null="true" />
+  <property name="imageFileId" column="imageFileId" type="string" not-null="true" />
+  <property name="relID" column="relId" type="string" />
+  <property name="validatedBy" column="validatedBy" type="string" />
+  <property name="effectiveFrom" column="effectiveFrom" type="timestamp" />
+  <property name="currentAddressCityTown" column="currCity" type="string" not-null="true" />
+  <property name="currentAddressState" column="currState" type="string" not-null="true" />
+  <property name="currentAddressWardNo" column="currWardNo" type="string" not-null="true" />
+  <property name="wardId" column="wardId" type="long" not-null="true" />
+  <property name="sex" column="sex" type="string" not-null="true" />
+  <property name="validity" column="validity" type="integer" not-null="true" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="Request">
+  	<id name="reqid" type="long" column="reqid">
+  		<generator class="increment"></generator>
+  	</id>
+  	<property name="id" column="id" not-null="true" type="string" />
+  	<property name="reqquestion" column="reqquestion" not-null="true" type="string" />
+  	<property name="reqServ" column="reqserv" type="timestamp" />
+  	<property name="reqTime" column="reqtime" type="timestamp" not-null="true" />
+  	<property name="reqtype" column="reqtype" type="string" not-null="true" />
+  	<property name="reqstatus" column="reqstatus" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>

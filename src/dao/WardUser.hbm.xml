@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="WardUser">
+  	<id name="id" type="string" column="id">
+ 		<generator class="assigned"></generator>
+  	</id>
+  	<property name="wardId" column="wardid" type="long" not-null="true" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="dao">
+  <class name="WardID">
+  	<id name="wardId" column="wardId" type="long">
+  		<generator class="hilo" />
+  	</id>
+  	<property name="state" column="state" type="string" not-null="true" />
+  	<property name="city" column="city" type="string" not-null="true" />
+  	<property name="wardNo" column="wardno" type="string" not-null="true" />
+  </class>
+</hibernate-mapping>
